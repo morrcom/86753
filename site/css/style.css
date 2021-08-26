@@ -6000,3 +6000,35 @@ html.rd-navbar-fixed-linked header {
 	color:#F44C7F;
 	border-top: 3px solid #F9E858;
   }
+
+
+  .site-wrapper .content-section {
+    background-color: #fff;
+    padding: 100px 0;
+}  
+.site-wrapper .content-section .content-text {
+    padding-right: 30px;
+}  
+.site-wrapper .content-section .content-text .title {
+    font-size: 50px;
+    font-weight: 900;
+    color: #19191b;
+    letter-spacing: -2.5px;
+    margin-bottom: 30px;
+}
+.site-wrapper .content-section .content-text p {
+    color: #696871;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.66px;
+    line-height: 39px;
+}  
+.site-wrapper .content-section .content-text .content-btn {
+    margin-top: 30px;
+}   
+.site-wrapper .content-section .content-text .content-btn .btn {
+    font-size: 15px;
+}
+.site-wrapper .content-section .content-img-group {
+    text-align: right;
+}
