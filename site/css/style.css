@@ -1339,8 +1339,8 @@ hr {
 
 .button-primary, .button-primary:focus {
 	color: #ffffff;
-	background-color: #F44C7F;
-	border-color: #F44C7F;
+	background-color:  #F9E858;
+	border-color:  #F9E858;
 }
 
 .button-primary:hover, .button-primary:active, .button-primary.active {
@@ -3556,7 +3556,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar {
 	display: none;
-	background: #F9E858;
+	background: transparent;
 }
 
 .rd-navbar-toggle {
@@ -4686,7 +4686,7 @@ html.rd-navbar-fixed-linked header {
 }
 
 .rd-navbar-classic.rd-navbar-static {
-	border-bottom: 1px solid transparent;
+	border-bottom: 0px solid transparent;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-aside-outer,
@@ -4706,7 +4706,7 @@ html.rd-navbar-fixed-linked header {
 	position: relative;
 	display: flex;
 	align-items: center;
-	padding: 35px 0;
+	padding: 10px 0;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-brand img {
@@ -5937,3 +5937,66 @@ html.rd-navbar-fixed-linked header {
     text-align: right;
 }
 
+/* neighbourhood */
+
+
+
+
+/* chefs feature */
+
+.warpper{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  .tab{
+	cursor: pointer;
+	padding:10px 20px;
+	margin:0px 2px;
+	background:black;
+	display:inline-block;
+	color:#fff;
+	border-radius:3px 3px 0px 0px;
+	box-shadow: 0 0.5rem 0.8rem #00000080;
+  }
+  .panels{
+	background:#fffffff6;
+	box-shadow: 0 2rem 2rem #00000080;
+	min-height:200px;
+	width:100%;
+	max-width:500px;
+	border-radius:3px;
+	overflow:hidden;
+	padding:20px;  
+  }
+  .panel{
+	display:none;
+	animation: fadein .8s;
+  }
+  @keyframes fadein {
+	  from {
+		  opacity:0;
+	  }
+	  to {
+		  opacity:1;
+	  }
+  }
+  .panel-title{
+	font-size:1.5em;
+	font-weight:bold
+  }
+  .radio{
+	display:none;
+  }
+  #one:checked ~ .panels #one-panel,
+  #two:checked ~ .panels #two-panel,
+  #three:checked ~ .panels #three-panel{
+	display:block
+  }
+  #one:checked ~ .tabs #one-tab,
+  #two:checked ~ .tabs #two-tab,
+  #three:checked ~ .tabs #three-tab{
+	background:#fffffff6;
+	color:#F44C7F;
+	border-top: 3px solid #F9E858;
+  }
